@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- header -->
+    <header class="z-10 sticky top-0 bg-gray-600 py-5">
+		<nav class="w-9/12 flex flex-row mx-auto">
+			<div class="text-4xl basis-1/4"> <!-- logo -->
+				<a href="#hero">
+					<span class="font-extrabold text-white">mugi</span>
+					<span class="font-semibold text-blue-400">nanda</span>
+				</a>
+			</div>
+			<div class="text-2xl text-white basis-1/2 flex place-items-end justify-evenly"> <!-- Link -->
+				<a href="#about"><span>about</span></a>
+				<a href="#portofolio"><span>portofolio</span></a>
+				<a href="#contact"><span>contact</span></a>
+			</div>
+		</nav>
+	</header>
+
+    <main id="hero" class="relative -top-20"> <!-- Main Content -->
+    <!-- Home -->
+    <div id="about">
+        <div class="relative pt-20">
+          <div class="flex flex-wrap justify-center items-center">
+            <div class="w-full md:w-1/2 p-5 flex justify-center items-center">
+              <div>
+                <h1 class="text-4xl font-bold">Komang Mugi Nanda Prasasta</h1>
+                <p class="text-justify mt-4 text-gray-600">
+                  seorang mahasiswa yang sedang belajar membuat website, dengan ketertarikan pada bidang IT. Memiliki harapan untuk menjadi seorang game developer, musisi,
+                  penjaga pantai, insinyur, penjaga gawang, ilmuan, dan pemain profesional pada sebuah game online. Banyak waktunya digunakan untuk sesuatu yang tentunya 
+                  memiliki efek yang dapat merugikan dirinya sendiri, kesalahan tersebut tentunya membuatnya belajar bahwasannya masih ada hari esok untuk mencoba kembali. 
+                  Karena manusia tidak luput dari kesalahan ataupun kesalahan yang terus berulang atau sifat dasarnya.
+                </p>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 flex">
+              <div class="foto">
+                <img
+                  src="img/about.jpg"
+                  alt="about"
+                  width="700px"
+                  height="auto"
+                  class="clipped-shadow" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About -->
+      <div id="about">
+        <div class="relative">
+          <div class="flex flex-wrap justify-center items-center">
+                <div class="w-full md:w-1/2 justify-center flex">
+                    <div class="foto">
+                      <img
+                        src="img/bali.png"
+                        alt="profile"
+                        width="600px"
+                        height="auto"
+                        class="clipped-shadow" />
+                    </div>
+                </div>
+            <div class="w-full md:w-1/2 p-5 flex justify-center items-center">
+                <div>
+                <h3 class="text-2xl font-semibold">About Me</h3>
+                <p class="mt-4 text-gray-600 text-justify">
+                Saya lahir dan tinggal di Bali, lebih tepatnya saya berasal dari Kecamatan Gerokgak,
+                sedang menempuh pendidikan di Universitas Pendidikan Ganesha, dengan program studi S1 Ilmu Komputer. 
+                Pada bidang yang seya tekuni, saya lebih tertarik dengan Game Develompent karena tidak jauh dari hobi saya yang bermain game.
+                Game yang biasa saya mainkan yaitu DOTA 2, yang sudah saya mainkan sejak 2017.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- portfolio -->
+      <div id="portofolio" class="bg-gray-700 py-40"> 
+        <div class="w-9/12 mx-auto">
+            <div class="flex flex-col"> <!-- judul -->
+                    <h3 class="text-3xl text-white"><u>Portofolio</u></h3>
+            </div>
+
+            <div class="grid grid-cols-4 gap-20 mt-20"> <!-- cards -->
+                <div class="rounded-lg shadow-lg overflow-hidden">
+                    <img 
+                        class="object-cover w-auto h-auto"
+                        src="img/game.jpg" alt="">
+                    <div class="bg-white py-2 px-4">
+                        <h4 class="text-sm font-medium text-gray-800">Game Develompent</h4>
+                        <h5 class="text-sm font-mono">C++ C#</h5>
+                    </div>
+                </div>
+                    
+                <div class="rounded-lg shadow-lg overflow-hidden">
+                    <img 
+                        class="object-cover w-auto h-auto"
+                        src="img/dota-icon.jpg" alt="">
+                    <div class="bg-white py-2 px-4">
+                        <h4 class="text-sm font-medium text-gray-800">DOTA 2</h4>
+                        <h5 class="text-sm font-mono">Divine</h5>
+                    </div>
+                </div>
+
+                <div class="rounded-lg shadow-lg overflow-hidden">
+                    <img 
+                        class="object-cover w-auto h-auto"
+                        src="img/music.jpg" alt="">
+                    <div class="bg-white py-2 px-4">
+                        <h4 class="text-sm font-medium text-gray-800">Music</h4>
+                        <h5 class="text-sm font-mono">Background Music</h5>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact" class="bg-white pt-40"> 
+        <div class="mx-auto w-9/12 flex flex-row items-center">
+            <div class="basis-1/2">
+                <div class="flex flex-col"> <!-- judul -->
+                    <h3 class="text-3xl text-gray-800">Contact Me</h3>
+                </div>
+
+                <form action="#" method="POST" class="max-w-md mt-10">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-semibold">name</label>
+                        <input class="bg-blue-100 rounded-md px-4 py-2 w-full focus:ring-blue-950" type="text"/>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-semibold">Email</label>
+                        <input class="bg-blue-100 rounded-md px-4 py-2 w-full focus:ring-blue-950" type="email"/>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700 font-semibold">Message</label>
+                        <textarea class="bg-blue-100 rounded-md px-4 py-2 w-full focus:ring-blue-950" name="" id="" cols="30" rows="4"></textarea>
+                    </div>
+                    <div>
+                        <button class="hover:bg-blue-600 bg-blue-500 text-white font-semibold py-2 px-4 rounded-md w-full "type="submit">Send Email</button>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="basis-1/2 ml-10">
+                <div class="flex flex-row gap-5 p-5">
+                    <div class="w-10 h-10 p-2 bg-blue-100 rounded-2xl">
+                        <img class="w-full" src="img/linkedin.png" alt="">
+                    </div>
+                    <div>
+                        <h4 class="text-lg text-gray-800 font-medium">LinkedIn</h4>
+                        <h5 class="font-thin">muginanda</h5>
+                    </div>
+                </div>
+
+                <div class="flex flex-row gap-5 p-5">
+                    <div class="w-10 h-10 p-2 bg-blue-100 rounded-2xl">
+                        <img class="w-full" src="img/email.png" alt="">
+                    </div>
+                    <div>
+                        <h4 class="text-lg text-gray-800 font-medium">E-Mail</h4>
+                        <h5 class="font-thin">mugiprasasta@gmail.com</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <!-- footer -->
+    <footer class="bg-yellow-50 text-center pt-10 pb-10 font-mono -mt-20"> 
+		2023 Mugi Nanda. All rights reserved
+	</footer>
+    
+</body>
+</html>
